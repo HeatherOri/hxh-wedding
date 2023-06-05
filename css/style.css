@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@font-face {
+    font-family: "modesty";
+    src: url("fonts/modesty/ModestyFreshStyle.otf");
+}
 
 a{
     font-family: 'Noto Serif TC', serif;
@@ -43,9 +43,9 @@ li{
 }
 
 h1{
-    font-size: 60px;
-    color: rgb(226, 127, 97);
-    font-family: 'Josefin Slab', serif;
+    font-size: 80px;
+    color: rgb(195 105 129);
+    font-family: 'modesty', cursive;
     letter-spacing: 1px;
 }
 
@@ -69,7 +69,7 @@ h3{
     font-weight: 300;
     font-size: 26px;
     letter-spacing: 2px;
-    color:rgb(226, 127, 97);
+    color:rgb(195 105 129);
     margin: 50px 20px 20px 0px;
 }
 
@@ -107,8 +107,13 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;    
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+#navbar .logo-section img{
+    max-height: 160px;
+    opacity: 0.5;
 }
 
 #navbar .logo-section h1{
@@ -199,7 +204,7 @@ p{
     width: -webkit-fill-available;
 }
 
-#title img{
+#title .background-image{
     position: absolute;
     width: 100vw;
     min-height: 800px;
@@ -411,7 +416,11 @@ p{
         position: absolute;
         color: #fff;
         min-width: 280px;
-        top: 120px;
+        top: 50px;
+    }
+
+    #title .text img{
+        max-height: 200px;
     }
 
     #title {
@@ -436,8 +445,7 @@ p{
 
 @media (min-width: 0px) and (max-width: 450px){
     h1{
-        font-size: 35px;
-        color: rgb(226, 127, 97);
+        font-size: 50px;
         letter-spacing: 1px;
     }
 
@@ -457,7 +465,6 @@ p{
         /* font-family: 'Lato', sans-serif; */
         font-weight: 300;
         letter-spacing: 2px;
-        color:rgb(226, 127, 97);
         margin: 50px 20px 20px 0px;
         font-size: 18px;
     }
