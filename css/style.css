@@ -10,6 +10,10 @@
     src: url("https://heatherori.github.io/hxh-wedding/fonts/modesty/ModestyFreshStyle.ttf")format('truetype');
 }
 
+.visible-img img{
+    max-height: 90%;
+}
+
 a{
     font-family: 'Noto Serif TC', serif;
     font-weight: 500;
