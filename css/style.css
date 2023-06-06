@@ -258,6 +258,7 @@ p{
     border-bottom: #fff solid 2px;
     max-width: 1000px;
     width: -webkit-fill-available;
+    position: relative;
 }
 
 .demoPicture{
@@ -324,6 +325,20 @@ p{
 
 #openButton{
     display: none;
+}
+
+#attend iframe{
+    z-index: 1;
+    position: relative;
+}
+
+#attend .form-submit{
+    display: none;
+    position: absolute;
+    top: 1400px;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
 }
 
 
@@ -490,6 +505,10 @@ p{
 
     .contentbox {
         margin: 0 30px;
+    }
+
+    #attend .form-submit{
+        display: block;
     }
 
     #title h1{
